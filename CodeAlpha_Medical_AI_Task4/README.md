@@ -43,7 +43,7 @@ CodeAlpha_Medical_AI_Task4/
 ├── README.md                  # Project Documentation
 ⚙️ Installation & Setup
 1️⃣ Clone Repository
-git clone https://github.com/YOUR_USERNAME/CodeAlpha_Medical_AI_Task4.git
+git clone : https://github.com/1122334455-eng/CodeAlpha_Machine_Learning_Internship/tree/main/CodeAlpha_Medical_AI_Task4
 cd CodeAlpha_Medical_AI_Task4
 2️⃣ Install Dependencies
 pip install -r requirements.txt
