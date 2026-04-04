@@ -1,109 +1,184 @@
-:
+# 🏥 AI Medical Prediction System (Task 4 - CodeAlpha Internship)
 
-🏥 CodeAlpha Medical AI System (Task 4)
-🚀 AI-Powered Disease Prediction System
+## 📌 Overview
+This project is an AI-powered medical diagnosis system that predicts:
 
-This project is a Machine Learning-based Medical Prediction System built using Streamlit.
-It predicts the risk of:
+- 🩸 Diabetes
+- ❤️ Heart Disease
+- 🧠 Stroke Risk
 
-🩸 Diabetes
-❤️ Heart Disease
-🧠 Stroke
+It is developed using Machine Learning and deployed using Streamlit with a user-friendly interface.
 
-The goal is early disease detection using AI to assist in medical decision-making.
+---
 
-📌 Features
+## 🚀 Features
+- Multi-Disease Prediction System
+- Interactive Streamlit Web App
+- Data Preprocessing & Cleaning
+- Handling Missing Values
+- Class Imbalance Handling (SMOTE)
+- Feature Scaling (StandardScaler)
+- Model Training & Evaluation
+- Probability-Based Risk Output (Stroke)
 
-✔ User Authentication (Login/Signup)
-✔ Diabetes Prediction Model
-✔ Heart Disease Prediction Model
-✔ Stroke Risk Prediction Model
-✔ Interactive Web UI (Streamlit)
-✔ Real-time Prediction Results
-✔ Risk Level Indicator (Low / Medium / High)
-✔ Beautiful Dark Medical UI
+---
 
-Machine Learning Models Used
-Logistic Regression / Classification Models
-StandardScaler for preprocessing
-Trained using Scikit-learn
-📁 Project Structure
-CodeAlpha_Medical_AI_Task4/
+## 🧠 Machine Learning Models Used
+
+### 🩸 Diabetes Prediction
+- Random Forest Classifier
+- Feature Scaling (StandardScaler)
+- Evaluation using Accuracy & Confusion Matrix
+
+### ❤️ Heart Disease Prediction
+- Random Forest Classifier
+- Train-Test Split
+- Accuracy Evaluation (~98%+)
+
+### 🧠 Stroke Prediction
+- XGBoost Classifier
+- SMOTE for class balancing
+- Label Encoding
+- Probability threshold tuning
+- ROC-AUC evaluation
+
+---
+
+## ⚙️ Tech Stack
+- Python 🐍
+- Pandas & NumPy
+- Scikit-learn
+- XGBoost
+- Imbalanced-learn (SMOTE)
+- Streamlit (Frontend)
+- Matplotlib & Seaborn
+
+---
+# 🏥 AI Medical Prediction System (Task 4 - CodeAlpha Internship)
+
+## 📌 Overview
+This project is an AI-powered medical diagnosis system that predicts:
+
+- 🩸 Diabetes
+- ❤️ Heart Disease
+- 🧠 Stroke Risk
+
+It is developed using Machine Learning and deployed using Streamlit with a user-friendly interface.
+
+---
+
+## 🚀 Features
+- Multi-Disease Prediction System
+- Interactive Streamlit Web App
+- Data Preprocessing & Cleaning
+- Handling Missing Values
+- Class Imbalance Handling (SMOTE)
+- Feature Scaling (StandardScaler)
+- Model Training & Evaluation
+- Probability-Based Risk Output (Stroke)
+
+---
+
+## 🧠 Machine Learning Models Used
+
+### 🩸 Diabetes Prediction
+- Random Forest Classifier
+- Feature Scaling (StandardScaler)
+- Evaluation using Accuracy & Confusion Matrix
+
+### ❤️ Heart Disease Prediction
+- Random Forest Classifier
+- Train-Test Split
+- Accuracy Evaluation (~98%+)
+
+### 🧠 Stroke Prediction
+- XGBoost Classifier
+- SMOTE for class balancing
+- Label Encoding
+- Probability threshold tuning
+- ROC-AUC evaluation
+
+---
+
+## ⚙️ Tech Stack
+- Python 🐍
+- Pandas & NumPy
+- Scikit-learn
+- XGBoost
+- Imbalanced-learn (SMOTE)
+- Streamlit (Frontend)
+- Matplotlib & Seaborn
+
+---
+
+## 📁 Project Structure
+CodeAlpha_Medical_AI_System_Task4/
 │
-├── app.py                      # Main Streamlit Application
-├── model.pkl                   # Diabetes Prediction Model
-├── model_heart.pkl            # Heart Disease Model
-├── stroke_model_v2.pkl        # Stroke Prediction Model
-├── stroke_scaler_v2.pkl       # Stroke Data Scaler
+├── app.py
+├── model.pkl
+├── model_heart.pkl
+├── stroke_model_v2.pkl
+├── stroke_scaler_v2.pkl
+├── stroke_encoders_v2.pkl
 │
-├── profile.jpg                # Developer Profile Image
-├── company.png                # Sidebar Logo/Image
+├── data/
+│ ├── diabetes.csv
+│ ├── heart.csv
+│ └── healthcare-dataset-stroke-data.csv
 │
-├── requirements.txt           # Required Libraries
-├── README.md                  # Project Documentation
-⚙️ Installation & Setup
-1️⃣ Clone Repository
-git clone : https://github.com/1122334455-eng/CodeAlpha_Machine_Learning_Internship/tree/main/CodeAlpha_Medical_AI_Task4
+├── images/
+│ ├── company.png
+│ └── profile.jpg
+│
+├── requirements.txt
+└── README.md
+
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/1122334455-eng/CodeAlpha_Machine_Learning_Internship.git
 cd CodeAlpha_Medical_AI_Task4
 2️⃣ Install Dependencies
 pip install -r requirements.txt
-3️⃣ Run Application
+3️⃣ Run Streamlit App
 streamlit run app.py
-🌐 Requirements
+📊 Model Performance
+🩸 Diabetes Model
+Accuracy: ~81%
+❤️ Heart Disease Model
+Accuracy: ~98%
+🧠 Stroke Model
+Accuracy: ~87%
+ROC-AUC: ~0.84
+🎯 Key Techniques Used
+Data Cleaning
+Feature Engineering
+Standard Scaling
+Label Encoding
+SMOTE (Oversampling)
+Ensemble Learning
+XGBoost Optimization
+Probability Threshold Tuning
+Model Serialization (Pickle)
+🏢 Internship
 
-Make sure you have:
+This project is part of:
 
-Python 3.8+
-pip installed
-Streamlit installed
-📦 requirements.txt
-streamlit
-numpy
-scikit-learn
-pillow
-🖥️ How It Works
-User logs in / signs up
-Select disease from sidebar:
-Diabetes
-Heart Disease
-Stroke
-Enter medical inputs
-Click Predict
-System shows risk level:
-🟢 Low Risk
-🟡 Medium Risk
-🔴 High Risk
-🧠 Stroke Prediction Logic
-Uses 10 input medical features
-Data is scaled using StandardScaler
-Model predicts probability of stroke
-Risk percentage displayed using progress bar
-🎯 Objective
+CodeAlpha Machine Learning Internship
 
-To build an AI-based medical assistant that helps in:
-
-Early disease detection
-Risk assessment
-Supporting healthcare decisions
-👨‍💻 Developer
+👨‍💻 Author
 
 Sharif Ullah
+📧 Email: sharifullah7087@gmail.com
+
 🎓 BS Artificial Intelligence
-🏫 Hazara University Mansehra
-📧 sharifullah7087@gmail.com
+📍 Hazara University Mansehra
 
-🏆 Project Status
-
-✔ Completed for CodeAlpha Internship Task 4
-✔ Fully Functional
-✔ Ready for Deployment
-
-🚀 Future Improvements
-Add hospital database (SQLite)
-PDF medical report generation
-Deploy on Streamlit Cloud
+⭐ Future Improvements
+Add Deep Learning models
+Deploy on Cloud (AWS/Heroku)
+Improve UI/UX
 Add more diseases
-Improve model accuracy with deep learning
-⭐ If you like this project
-
-Give a ⭐ on the repository and connect with me!
